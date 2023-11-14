@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Snagairad">
+
+    <TextView
+        android:id="@+id/naslovsilaigibanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sila i gibanje"
+        android:gravity="center"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/unossile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/naslovsilaigibanje"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toLeftOf="@id/unosputa"
+        android:hint="unesi silu"
+        android:textSize="30sp"  />
+
+    <EditText
+        android:id="@+id/unosputa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/naslovsilaigibanje"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toRightOf="@id/unossile"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="unesi put"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/izrcunajsilaigibanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/unossile"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Izračunaj" />
+
+    <TextView
+        android:id="@+id/rezultatsnagaigibanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/izrcunajsilaigibanje"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

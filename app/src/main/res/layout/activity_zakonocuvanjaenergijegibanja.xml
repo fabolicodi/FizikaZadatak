@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Zakonocuvanjaenergijegibanja">
+
+    <TextView
+        android:id="@+id/naslovzakonocuvanja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Zakon očuvanja energije za gibanje"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/unosmase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/naslovzakonocuvanja"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:hint="unesi masu"
+        android:textSize="30sp"  />
+
+    <EditText
+        android:id="@+id/unobrzine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/naslovzakonocuvanja"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toRightOf="@id/unosmase"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="unesi brzinu"
+        android:textSize="30sp"  />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/izracunajzakonocuvanja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/unosmase"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="izračunaj kinetičku energiju"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/rijesenjezakonocuvanja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/izracunajzakonocuvanja"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
